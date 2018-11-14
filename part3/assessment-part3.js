@@ -14,7 +14,12 @@
 
 // CODE HERE...
 function callBinding(magicAnimals, updateAnimal, id){
-    
+    for(var i = 0; i<magicAnimals.length; i++){
+        if(magicAnimals[i] == id){
+            var trog = updateAnimal('Trogdor').bind(magicAnimals[i])
+        }
+    }
+    return trog;
 }
 
 
@@ -71,5 +76,5 @@ function promiseMe($q){
 
 // CODE HERE...
 function emailList($q, $http){
-    
+
 }
